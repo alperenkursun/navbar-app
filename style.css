@@ -1,0 +1,135 @@
+html{
+    box-sizing:border-box;
+}
+
+#navbar{
+    background-color: white;
+    padding: 15px;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#left{
+    font-size: 30px;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 0.5);
+}
+
+#a{
+    color: rgb(13, 202, 240);    
+}
+
+#c{
+    color: black;
+}
+
+
+#mid a{
+    text-decoration: none;
+    color: black;
+    letter-spacing: 4px;
+    padding: 5px;
+    vertical-align: center;
+}
+
+#mid a:hover{
+    transition: all 0.4s;
+    color: rgb(13, 202, 240);    
+}
+
+#right{
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(13, 202, 240);
+}
+
+#right i:hover{
+    transition: all 0.4s;
+    opacity: 0.7;
+}
+
+body{
+    text-align: center;
+    background-color: rgb(241, 245, 248) !important;
+    margin: 0;
+}
+
+.fa-solid.fa-bars{
+    padding: 5px;
+    display: none;
+    font-size: 30px;
+    transition: all 0.6s;
+    color: rgb(13, 202, 240);
+    cursor:pointer;
+}
+
+.fa-solid.fa-bars:hover{
+    transition: all 0.6s;
+    transform: rotate(90deg);
+    color: black;
+}
+
+@media (max-width:800px){
+    #right{
+        display: none;
+    }
+
+    #mid{
+        transition: all 0.5s;
+        height: 0px;
+        overflow: hidden;
+    }
+
+    #mid span{
+        width: 100%;
+    }
+
+    #mid a{
+        margin: 0;
+        text-align: start;
+        padding: 15px;
+        text-align: start;
+        display: block;
+        transition: all 0.4s linear;
+        overflow: hidden !important;
+    }
+
+    #mid a:hover{
+        display: block;
+        background-color: rgba(13, 202, 240,0.10);
+        transition: all 0.8s;
+        padding: 15px 25px;
+    }
+    
+    #nav{
+        width: 100%;
+    }
+
+    #navbar{ 
+        padding: 0;
+    }
+
+    #left{
+        text-align: start;
+        padding:20px;
+    }
+
+    #nav{
+        display: inline;
+    }
+
+    .fa-solid.fa-bars{
+        display:inline-flex;
+        height: 26.250px !important;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 25px;
+    } 
+}
